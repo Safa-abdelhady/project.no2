@@ -1,0 +1,470 @@
+*{
+    margin: 0PX;
+    padding: 0PX; 
+}
+body{
+    background-color:f0ead2 ;
+    height: 3000px;
+    perspective: 700px;
+}
+.header{
+    width: 100%;
+    height: 700px;
+    overflow: auto;
+    top: 0px;
+    opacity: 0.7;
+    z-index: 1;
+    left: 0PX;
+}
+.img1{
+    height: 150px;
+    width: 250px;
+    float: left;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+.ul1{
+    list-style: none;
+    float: left;
+    margin-right: 30px;
+    margin-top: 60px;
+    font-size: 30px;
+}
+li{
+    position: relative;
+}
+.ul1 li{
+    display: inline;
+    margin-left: 30px;
+}
+.design::after{
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    border-right: 2px solid  rgb(121, 9, 143);
+    border-left: 2px solid  rgb(121, 9, 143);
+    position: absolute;
+}
+.design:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.design::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    border-top: 2px solid  rgb(121, 9, 143);
+    border-bottom: 2px solid  rgb(121, 9, 143);
+    position: absolute;
+}
+.design:hover::before{
+    width: 100%;
+    transition: 1s;
+}
+
+.dropdown{
+    width: 460px;
+    height: 130px;
+    margin-top: 10px;
+    border: 1px solid gray;
+    visibility: hidden;
+    background-color: f0ead2;
+    z-index: 2;
+    font-size: 20px;
+    padding-top: 20px;
+    opacity: 0;
+    overflow: auto;
+}
+.row{
+   float: left;
+   width: 100px;
+   height: 125px; 
+   text-align: center;
+   margin-left: 10px;
+}
+.row h2{
+    font-size: 22px;
+    color:rgb(121, 9, 143) ;
+    font-style: italic;
+    text-decoration: underline;
+}
+.ul1:hover .dropdown{
+   visibility: visible;
+   opacity: 1;
+}
+
+a ,li{
+    text-decoration: none;
+}
+.ul1 li a{
+    text-decoration: none;
+    color: rgb(20, 224, 71);
+}
+i{
+    padding-top: 70px;
+}
+.zero{
+    color: rgb(121, 9, 143);
+    height: 15px;
+    width: 15px;
+    border: 3px solid rgb(121, 9, 143);
+    position: absolute;
+    margin-left: 1200px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.main{
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    background-image: url(../images/Facebook\ Cover\ 851x315\ px.jpeg);
+    background-size: cover;
+}
+.section-header{
+    text-align: center;
+    transform-style: preserve-3d;
+}
+.section-header .section-titel1{
+    text-transform: capitalize;
+    color:  rgb(20, 224, 71);
+    font-size: 45px;
+    margin-top: 15px;
+    margin-bottom: 9px;
+}
+.section-header .line{
+    width: 130px;
+    height: 3px;
+    background-color: rgb(121, 9, 143);
+   margin: 0 auto 70px auto;
+   display: block;
+}
+.section-header .line:hover{
+    transform: scale(2 , 1);
+}
+.category{
+    width: 100%;
+    height: 600px;
+    overflow: auto;
+    transform-style: preserve-3d;  
+}
+.sec-info1,.sec-info2,.sec-info3,.sec-info4{
+    width: 300px;
+    height: 370px;
+    background-color:rgb(242, 232, 245) ;
+    float: left;
+    margin: auto;
+    margin-left: 30px;
+  border-radius: 12px;
+}
+img:hover{
+    transform: scale(1.1 , 1.5);
+}
+.info-c{
+    padding-left: 30px;
+    font-size: 40px;
+    font-weight: 700;
+    display: inline;
+    color: rgb(121, 9, 143);      
+}
+.info-i{
+    font-size: 30px;
+   color: rgb(20, 224, 71);
+   visibility: hidden;
+}
+.sec-info1:hover .info-i{
+    visibility: visible;
+}
+.sec-info2:hover .info-i{
+    visibility: visible;
+}
+.sec-info3:hover .info-i{
+    visibility: visible;
+}
+.sec-info4:hover .info-i{
+    visibility: visible;
+}
+.container{
+width: 100%;
+height: 350px;
+    overflow: auto;
+}
+.marketing{
+    width: 500px;
+    height: 300px;
+    background-color:ddb892 ;
+    margin-left: 80px;
+    font-size: 22px;
+    position: relative;
+    font-style: italic;
+    float: left;
+}
+.m-icon{
+    color: rgb(121, 9, 143);
+    display: block;
+    font-size: 30px;
+    position: absolute;
+    margin-right: auto;
+    margin-top: -65px;
+    margin-left: 10px;   
+}
+.title1,.info-m{
+    display: inline;
+   padding-left: 50px;
+   color: rgb(90, 85, 85);
+}
+.parg-m{
+color: rgb(90, 85, 85);
+}
+.line-m{
+    height: 25px;
+    width: 200px;
+    margin-left: 280px;
+    margin-top: 30px;
+    text-align: center;
+}
+.line1{
+    width:40px ;
+    height: 2px;
+   display: inline-block;
+    background-color: rgb(121, 9, 143);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.line2{
+    width:40px ;
+    height: 2px;
+    display: inline-block;
+    background-color: rgb(121, 9, 143);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.line3{
+    width:40px ;
+    height: 2px;
+    display: inline-block;
+    background-color: rgb(121, 9, 143);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.discount1,.discount2{
+    width: 300px;
+    height: 300px;
+    background-color:ddb892 ;
+    float: left;
+    margin-left: 30px;
+}
+.free{
+    width: 80%;
+    height: 250px;
+    overflow: auto;
+    margin: auto;
+}
+.free-d1,.free-d2,.free-d3,.free-d4,.free-d5{
+    width: 180px;
+    height: 200px;
+    float: left;
+    margin-left: 20px;
+    text-align: center;
+}
+.icon-img1{
+    width: 64px;
+    height: 64px;
+    background: url(../images/WhatsApp\ Image\ 2023-01-07\ at\ 23.41.44.jpeg) no-repeat;
+    background-position: center 5px;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+}
+.icon-img1:hover{
+    background: url(../images/WhatsApp\ Image\ 2023-01-07\ at\ 23.41.44.jpeg) no-repeat;
+   background-position: center -80px;  
+}
+.icon-img2{
+    width: 64px;
+    height: 64px;
+    background: url(../images/WhatsApp\ Image\ 2023-01-07\ at\ 23.41.44.jpeg) no-repeat;
+    background-position: center -180px;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+}
+.icon-img2:hover{
+    background: url(../images/WhatsApp\ Image\ 2023-01-07\ at\ 23.41.44.jpeg) no-repeat;
+   background-position: center  -260px;  
+}
+.icon-img3{
+    width: 64px;
+    height: 64px;
+    background: url(../images/WhatsApp\ Image\ 2023-01-07\ at\ 23.41.44.jpeg) no-repeat;
+    background-position: center -360px;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+}
+.icon-img3:hover{
+    background: url(../images/WhatsApp\ Image\ 2023-01-07\ at\ 23.41.44.jpeg) no-repeat;
+   background-position: center -440px;  
+}
+.icon-img4{
+    width: 64px;
+    height: 64px;
+    background: url(../images/WhatsApp\ Image\ 2023-01-07\ at\ 23.41.44.jpeg) no-repeat;
+    background-position: center -550px;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+}
+.icon-img4:hover{
+    background: url(../images/WhatsApp\ Image\ 2023-01-07\ at\ 23.41.44.jpeg) no-repeat;
+   background-position: center -630px;  
+}
+.icon-img5{
+    width: 64px;
+    height: 64px;
+    background: url(../images/WhatsApp\ Image\ 2023-01-07\ at\ 23.41.44.jpeg) no-repeat;
+    background-position: center -730px;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+}
+.icon-img5:hover{
+    background: url(../images/WhatsApp\ Image\ 2023-01-07\ at\ 23.41.44.jpeg) no-repeat;
+   background-position: center -810px;  
+}
+.free-line{
+    width: 1px;
+    height: 200px;
+    background-color: black;
+    float: left;
+    margin-left: 15px;
+}
+.featured{
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+}
+.price{
+    width: 300px;
+    height: 470px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 30px;
+    position: relative;
+}
+.products1,.products2,.products3,.products4{
+    font-size: 25px;
+    padding-left: 30px;
+    font-style: italic;
+}
+.box1,.box2,.box3,.box4,.box5,.box6{
+    transform-style: preserve-3d;
+    position: relative;
+    width: 300px;
+    height: 330px;
+    transition: transform 2s;
+
+}
+.front1{
+    width: 300px;
+    height: 350px;
+    background-image: url(../images/WhatsApp\ Image\ 2023-01-13\ at\ 23.39.55.jpeg);
+    background-size: cover;
+    backface-visibility: hidden;
+    z-index: 1;
+    position: absolute;
+}
+.front2{
+    width: 300px;
+    height: 350px;
+    background-image: url(../images/WhatsApp\ Image\ 2023-01-13\ at\ 23.39.56.jpeg);
+    background-size: cover;
+    backface-visibility: hidden;
+    z-index: 1;
+    position: absolute;
+}
+.front3{
+    width: 300px;
+    height: 350px;
+    background-image: url(../images/WhatsApp\ Image\ 2023-01-13\ at\ 23.39.57.jpeg);
+    background-size: cover;
+    backface-visibility: hidden;
+    z-index: 1;
+    position: absolute;
+}
+.front4{
+    width: 300px;
+    height: 350px;
+    background-image: url(../images/WhatsApp\ Image\ 2023-01-13\ at\ 23.39.57\ \(1\).jpeg);
+    background-size: cover;
+    backface-visibility: hidden;
+    z-index: 1;
+    position: absolute;
+}
+.front5{
+    width: 300px;
+    height: 350px;
+    background-image: url(../images/WhatsApp\ Image\ 2023-01-18\ at\ 04.00.25.jpeg);
+    background-size: cover;
+    backface-visibility: hidden;
+    z-index: 1;
+    position: absolute;
+}
+.front6{
+    width: 300px;
+    height: 350px;
+    background-image: url(../images/WhatsApp\ Image\ 2023-01-18\ at\ 04.00.25\ \(1\).jpeg);
+    background-size: cover;
+    backface-visibility: hidden;
+    z-index: 1;
+    position: absolute;
+}
+.back1 {
+    transform: rotatey(180deg);
+   background-image: url(../images/WhatsApp\ Image\ 2023-01-19\ at\ 00.41.41\ \(2\).jpeg1.jpeg);
+   background-size: cover;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    padding-top: 60px;
+    opacity: 0.5;
+    font-size: 40px;
+}
+.box1:hover{
+    transform: rotatey(180deg);
+}
+.box2:hover{
+    transform: rotatey(180deg);
+}
+.box3:hover{
+    transform: rotatey(180deg);
+}
+.box4:hover{
+    transform: rotatey(180deg);
+}
+.box5:hover{
+    transform: rotatey(180deg);
+}
+.box6:hover{
+    transform: rotatey(180deg);
+}
+.rate{
+    position: absolute;
+}
+.i1{
+    color: rgb(255, 255, 59);
+}
+.rate-info,.rate-prag{
+    font-size: 20px;
+    font-weight: 700;
+}
